@@ -17,7 +17,7 @@ pipelineJob('DSL_pipeline') {
                    extensions {}
                }
            }
-           scriptPath('./basics/misc/Jenkinsfile')
+           scriptPath('./basics/misc/Jenkinsfile.v2')
        }
    }
 }
