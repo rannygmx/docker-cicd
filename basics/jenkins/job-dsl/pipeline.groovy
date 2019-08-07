@@ -1,4 +1,4 @@
-pipelineJob('Boilerplate Pipeline') {
+pipelineJob('DSL_pipeline') {
     
     def repo = "https://github.com/rannygmx/docker-cicd.git"
 
