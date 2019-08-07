@@ -14,7 +14,7 @@ pipelineJob('Boilerplate Pipeline') {
                git{
                    remote {url(repo)}
                    branches('master', '**/feature*')
-                   exetensions {}
+                   extensions {}
                }
            }
            scriptPath('./basics/misc/Jenkinsfile')
