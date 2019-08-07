@@ -18,7 +18,7 @@ node {
    }
    stage('docker run') {
      sh label: '', script: '''
-      docker rm docker_test || echo docker already exist
+      docker rm -e docker_test
       docker run --rm -tid --name docker_test -p 3000 rannyeli/jenkins-nodejs-demo:latest
       PORT="$(docker ps|grep docker_test|sed 's/.*0.0.0.0://g'|sed 's/->.*//g')"
       curl -i localhost:$PORT
